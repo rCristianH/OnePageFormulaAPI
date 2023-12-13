@@ -1,3 +1,3 @@
 export default {
-  base: '/', // Ajusta según tu repositorio
+  base: 'https://rcristianh.github.io/OnePageFormulaAPI/', // Ajusta según tu repositorio
 }
