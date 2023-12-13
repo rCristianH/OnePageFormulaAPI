@@ -1,14 +1,19 @@
 {
+  "homepage": "https://rCristianH.github.io/OnePageFormulaAPI/",
   "name": "100tivite",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "predeploy": "npm run build",
+    "deploy": "vite build && gh-pages -d dist",
+    "preview": "vite preview --host"
   },
   "devDependencies": {
+    "axios": "^1.6.2",
+    "gh-pages": "^6.1.0",
     "vite": "^5.0.0"
   }
 }
